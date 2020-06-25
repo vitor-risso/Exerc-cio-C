@@ -19,22 +19,26 @@ int main(){
 
     //analise 
 
-    if( (mes ==1) || (mes ==3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)  && (dia < 32) ){
+    if( ((mes ==1) || (mes ==3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12))  && (dia < 32) ){
         printf("Essa data é válida");
 
     } else{
-        if((mes == 2) && (dia >= 1) && (dia<=29) && (ano % 4 ==0)){
+        if((mes == 2) && (dia<=29) && (ano % 4 ==0)){
             printf("Essa data é válida \n");
 
         } else {
-            if (mes == 2 && (dia >= 1) && (dia <=20)){
+            if ((mes == 2) && (dia <=28)){
 
                 printf("Essa data é válida"); 
 
             } else {
-                if((mes == 4) || (mes == 6) || (mes ==9) || (mes ==11) && (dia >=1) && (dia <=30)){
+                if(((mes == 4) || (mes == 6) || (mes ==9) || (mes ==11)) && (dia <=30)){
 
                     printf("Essa data é válida \n");
+                }
+                else{
+
+                    printf("Essa data é inválida\n\n");
                 }
             }
         }
