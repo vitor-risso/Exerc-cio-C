@@ -20,7 +20,7 @@ int main(){
             }else{
                 if ((a > 90) || (b > 90) || (c >90)){
 
-                    printf("Obtusângulo");
+                    printf("Obtusângulo\n");
                 }
             }
         }
