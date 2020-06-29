@@ -23,6 +23,10 @@ int main(){
         raiz =( (-b + raiz_delta) / 2 * a );
         raiz2 = ((-b - raiz_delta)/ 2*a);
 
+    printf("%d", raiz_delta);
+
+        /*
+
        if (raiz == raiz2){
            printf("A equação tem apenas 1 resultado : %f", raiz);
        } else{
@@ -35,7 +39,9 @@ int main(){
 
     } else {
         printf("A equação não tem raiz");
+    }*/
     }
     }
-    return 0;
+    return 0; 
 }
+    
